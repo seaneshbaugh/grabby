@@ -1,0 +1,21 @@
+﻿<Window x:Class="Grabby.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Grabby" Height="285" Width="600" ResizeMode="NoResize" Closing="WindowClosing">
+    <Grid>
+        <Label Content="Output Path:" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Height="26" Margin="10,10,0,0" VerticalAlignment="Top" Width="100" />
+        <TextBox HorizontalAlignment="Left" Height="26" Margin="115,10,0,0" Name="outputPath" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" FontSize="16" IsEnabled="False" />
+        <Button Click="SelectFolder" Content="Select" HorizontalAlignment="Left" Margin="483,13,0,0" Name="selectButton" VerticalAlignment="Top" Width="75" />
+        <Label Content="File Format:" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Margin="10,41,0,0" VerticalAlignment="Top" Width="100" />
+        <RadioButton Content="PNG" GroupName="Format" HorizontalAlignment="Left" Margin="115,47,0,0" VerticalAlignment="Top" IsChecked="True" />
+        <RadioButton Content="BMP" GroupName="Format" HorizontalAlignment="Left" Margin="115,67,0,0" VerticalAlignment="Top" />
+        <RadioButton Content="JPEG" GroupName="Format" HorizontalAlignment="Left" Margin="115,87,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.856,-5.111" />
+        <RadioButton Content="GIF" GroupName="Format" HorizontalAlignment="Left" Margin="115,107,0,0" VerticalAlignment="Top" />
+        <Label Content="Capture:" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Margin="10,123,0,0" VerticalAlignment="Top" Width="100" />
+        <RadioButton Content="Current Window" GroupName="Capture" HorizontalAlignment="Left" Margin="115,129,0,0" VerticalAlignment="Top" IsChecked="True" />
+        <RadioButton Content="Entire Screen" GroupName="Capture" HorizontalAlignment="Left" Margin="115,149,0,0" VerticalAlignment="Top" />
+        <Button Content="Disable" HorizontalAlignment="Left" Margin="115,216,0,0" VerticalAlignment="Top" Width="75" IsDefault="True" />
+        <Label Content="Name Format:" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Margin="10,169,0,0" VerticalAlignment="Top" Width="100" />
+        <TextBox HorizontalAlignment="Left" Height="26" Margin="115,173,0,0" TextWrapping="Wrap" Text="screen-shot-%nnnn-%dY-%dM-%dD-%tH-%tM-%tS" VerticalAlignment="Top" Width="443" FontSize="16" />
+    </Grid>
+</Window>
